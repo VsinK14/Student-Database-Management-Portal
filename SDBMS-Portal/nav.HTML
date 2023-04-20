@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="nav.HTML" class="logo">Student Portal</a>
+        <ul>
+            <li><a href="Insert.jsp">Insert Details</a></li> 
+            <li><a href="formupdate.java">Update Details</a></li>
+            <li><a href="Search.java">Search</a></li>
+            <li><a href="viewdata.java">View Database</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script type="text/Javascript">
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+</html>
+
